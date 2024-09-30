@@ -12,9 +12,12 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        databaseheandler db;
         public Form1()
         {
             InitializeComponent();
+            db = new databaseheandler();
+            db.readall();
         }
     }
 }
